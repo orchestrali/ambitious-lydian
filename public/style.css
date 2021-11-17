@@ -1,0 +1,193 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+button {
+  padding: 5px;
+  font-family: Georgia;
+  font-size: 16px;
+  margin: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
+
+.disabled {
+  border: 1px solid gray;
+  color: lightgray;
+}
+
+#startbutton {
+  padding: 20px;
+  font-size: 20px;
+}
+
+#container {
+  display: none;
+}
+
+div#bells {
+  position: relative;
+  width: 800px;
+}
+div.bellnum {
+  position: absolute;
+  /*width: 40px;*/
+}
+div.bellnum.left {
+  text-align: right;
+}
+
+div.bell {
+  position: absolute;
+  
+}
+div.base {
+  position: absolute;
+  height: 4px;
+  top: 70px;
+  width: 32px;
+  left: 34px;
+}
+
+div.handle {
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  top: 74px;
+  left: 40px;
+  color: white;
+  text-align: center;
+}
+div.handle.small {
+  width: 18px;
+  left: 41px;
+}
+
+
+#mybellnum {
+  position: absolute;
+  font-size: 18pt;
+  left: 240px;
+  top: 100px;
+}
+
+#instruct {
+  position: absolute;
+  top: 100px;
+  right: 240px;
+}
+
+#feedback {
+  position: absolute;
+  top: 200px;
+  right: 240px;
+  opacity: 0;
+  background-color: white;
+  font-size: 14pt;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#instructions {
+  max-width: 600px;
+  background-color: white;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#callcontainer {
+  position: absolute;
+  font-size: 20pt;
+  top: 60px;
+  width: 600px;
+  text-align: center;
+  z-index: 2;
+  background-color: white;
+  opacity: 0.7;
+}
+
+
+.c5 > div, .c6 > div, .c7 > div {
+  background-color: #e22;
+}
+
+.d5 > div, .d6 > div, .d7 > div {
+  background-color: rgb(248, 134, 6);
+}
+
+.e5 > div, .e6 > div {
+  color: black;
+  background-color: rgb(255, 234, 0);
+}
+
+.f5 > div, .f6 > div {
+  color: black;
+  background-color: rgb(133, 234, 98);
+}
+
+.g5 > div, .g6 > div {
+  background-color: rgb(4, 152, 108);
+}
+
+.a5 > div, .a6 > div {
+  background-color: rgb(81, 6, 249);
+}
+
+.b5 > div, .b6 > div {
+  background-color: rgb(236, 19, 232);
+}
+
+.c5 > div.base {
+  width: 41px;
+  left: 30px;
+}
+
+.d5 > div.base {
+  width: 39px;
+  left: 31px;
+}
+
+.e5 > div.base {
+  width: 37px;
+  left: 32px;
+}
+
+.f5 > div.base {
+  width: 35px;
+  left: 33px;
+}
+
+.g5 > div.base {
+  width: 34px;
+  left: 33px;
+}
